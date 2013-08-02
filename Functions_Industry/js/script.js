@@ -14,7 +14,9 @@ var images = new Array(imageCount);
 var i = imageCount;
 var imageNum = 1;
 var imagesPos = 0;
+// var imageSizeMath = 0;
 
+// While loop below builds an array based on user input. Array length and contents built dynamically on input received from prompt calls.
 while(i > 0){
     images[imagesPos] = prompt("How large is image number " + imageNum + "? (In Megabytes)");
     console.log("Image #" + imageNum + " is " + images[imagesPos] + "mb.");
@@ -22,8 +24,12 @@ while(i > 0){
     imagesPos++;
     i--;
 }
-console.log(images);
+// console.log(images); - Tested, removed. In place to assure that array is built correctly from user input.
 
+
+function totalSize(){
+
+}
 
 
 
