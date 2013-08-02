@@ -38,7 +38,7 @@ if (screenCount > 0) {
         //console.log(resArea(resWide, resHigh));
         //console.log(screenArea(scrWide,scrHigh)); -- Both made redundant by code below.
         //console.log(numberPixels(resArea(resWide, resHigh), screenArea(scrWide, scrHigh)));
-        var totalPixels = totalPixels + numberPixels((resArea(resWide, resHigh), screenArea(scrWide, scrHigh)));
+        var totalPixels = 0 + numberPixels((resArea(resWide, resHigh), screenArea(scrWide, scrHigh)));
 
     }
     console.log(totalPixels);
