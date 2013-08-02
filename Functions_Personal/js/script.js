@@ -22,17 +22,17 @@ if (screenCount > 0) {
 
         function resArea(wPixels, hPixels) {
             var sqPixels = wPixels * hPixels;
-            return Number(sqPixels);
+            return sqPixels;
         }
 
         function screenArea(wInches, hInches) {
             var sqInches = wInches * hInches;
-            return Number(sqInches);
+            return sqInches;
         }
 
         function numberPixels(sqPixels, sqInches) {
             var pixelCount = sqPixels * sqInches;
-            return Number(pixelCount);
+            return pixelCount;
         }
 
         //console.log(resArea(resWide, resHigh));
@@ -41,7 +41,7 @@ if (screenCount > 0) {
         var totalPixels = totalPixels + numberPixels((resArea(resWide, resHigh), screenArea(scrWide, scrHigh)));
 
     }
-    console.log(Number(totalPixels));
+    console.log(totalPixels);
 } else {
     console.log("Unable to calculate.\nThere are no displays connected.");
 }
